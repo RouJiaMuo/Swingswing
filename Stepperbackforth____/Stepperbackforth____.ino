@@ -27,12 +27,12 @@ void loop() {
     {
       digitalWrite(8, LOW);
     }
-    // Reset our distance back to zero since we're
+    // Reset our distance back to zero
     // starting a new move
     Distance = 0;
-    // Now pause for half a second
-    digit1 = digit1 - 0.3;
-    delay(digit1);
     
+    digit1 = digit1 - 0.3;//reduce each timing by 0.3ms 
+    delay(digit1); //How can I loop line 34 and 35 when digit1 hits 0?
+    //Idealy, I want to make the digit1 pause for a random time when it hits 0, and go back to 630, and pause another random time, and then reduce again.   
   }
 }
